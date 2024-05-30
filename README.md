@@ -53,7 +53,7 @@ Proje gereksinimlerini karşılamak için aşağıdaki adımları izleyin.
    
 Not:(installationTutorial.ipynb - dosyasından da yardım alabilirsiniz.)
 
-##Kullanım
+## Kullanım
 
 Aşağıdaki komutları kullanarak projeyi çalıştırabilirsiniz.
 
@@ -68,7 +68,7 @@ Komut Satırı Seçenekleri
  -  --output: Segmentasyon sonucu kaydedilecek dosyanın yolu.
 
 
-##Lisans
+## Lisans
 
 Bu proje MIT Lisansı ile lisanslanmıştır.
 
