@@ -51,7 +51,7 @@ Proje gereksinimlerini karşılamak için aşağıdaki adımları izleyin.
    mim download mmseg --config upernet_r50_4xb4-80k_ade20k-512x512 --dest ./checkpoints               #upernet
    mim download mmseg --config deeplabv3_r50-d8_4xb4-80k_ade20k-512x512 --dest ./checkpoints          #deeplabv3
    
-Not:(installationTutorial.ipynb - dosyasından da yardım alabilirsiniz.)
+Not: (installationTutorial.ipynb - dosyasından da yardım alabilirsiniz.)
 
 ## Kullanım
 
