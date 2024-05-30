@@ -53,8 +53,9 @@ Segmentasyon algoritmasını çalıştırın:
   ```
 Sonuçlar output klasöründe kaydedilecektir.
 Komut Satırı Seçenekleri
-  --input: Segmentasyon yapılacak görüntü dosyasının yolu.
-  --output: Segmentasyon sonucu kaydedilecek dosyanın yolu.
+--input: Segmentasyon yapılacak görüntü dosyasının yolu.
+--output: Segmentasyon sonucu kaydedilecek dosyanın yolu.
+
 
 Lisans
 Bu proje MIT Lisansı ile lisanslanmıştır.
