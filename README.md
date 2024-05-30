@@ -49,7 +49,7 @@ Aşağıdaki komutları kullanarak projeyi çalıştırabilirsiniz.
 Segmentasyon yapmak istediğiniz görüntüyü input klasörüne yerleştirin.
 Segmentasyon algoritmasını çalıştırın:
   ```sh
-  python segment.py --input input/your_image.jpg --output output/segmented_image.png
+  python ade20k_mmSeg.py --input input/your_image.jpg --output output/segmented_image.png
   ```
 Sonuçlar output klasöründe kaydedilecektir.
 Komut Satırı Seçenekleri
