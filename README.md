@@ -15,6 +15,7 @@ Bu proje, görüntü segmentasyonu yapmak için geliştirilmiş bir araçtır. A
 ## Özellikler
 
 - Görüntü segmentasyonu için çeşitli algoritmaların uygulanması
+- Sınıf haritasının düzenlenmesi
 - Kolay kullanımlı arayüz
 - Yüksek doğruluk oranı ile segmentasyon
 - Çıktıların görselleştirilmesi ve kaydedilmesi
@@ -27,6 +28,7 @@ Proje gereksinimlerini karşılamak için aşağıdaki adımları izleyin.
 
 - Python 3.8 veya üstü
 - Git
+- Anaconda
 - Virtualenv (tercihen)
 
 ### Adımlar
@@ -37,11 +39,19 @@ Proje gereksinimlerini karşılamak için aşağıdaki adımları izleyin.
    cd imageSegmentation
 2. Sanal ortam oluşturun ve etkinleştirin:
    ```sh
-   python -m venv venv
-   source venv/bin/activate  # Windows için: .\venv\Scripts\activate
+   conda create --name mmsegmentation python=3.8 -y
+   conda activate mmsegmentation
 3. Gerekli bağımlılıkları yükleyin:
    ```sh
    pip install -r requirements.txt
+4. Gerekli config ve checkpoint dosyalarını yükleyin:
+   ```sh
+   mim download mmseg --config fastfcn_r50-d32_jpu_enc_4xb4-80k_ade20k-512x512 --dest ./checkpoints   #fastfcn
+   mim download mmseg --config pspnet_r50-d8_4xb4-160k_ade20k-512x512 --dest ./checkpoints            #pspnet
+   mim download mmseg --config upernet_r50_4xb4-80k_ade20k-512x512 --dest ./checkpoints               #upernet
+   mim download mmseg --config deeplabv3_r50-d8_4xb4-80k_ade20k-512x512 --dest ./checkpoints          #deeplabv3
+   
+Not:(installationTutorial.ipynb - dosyasından da yardım alabilirsiniz.)
 
 Kullanım
 Aşağıdaki komutları kullanarak projeyi çalıştırabilirsiniz.
