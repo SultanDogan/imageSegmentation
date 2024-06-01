@@ -26,7 +26,9 @@ Proje gereksinimlerini karşılamak için aşağıdaki adımları izleyin.
 
 ### Gereksinimler
 
-- Python 3.8 veya üstü
+- Python 3.7 veya üstü
+- CUDA 10.2 veya üstü
+- PyTorch 1.8 veya üstü
 - Git
 - Anaconda
 - Virtualenv (tercihen)
